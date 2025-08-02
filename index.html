@@ -786,6 +786,71 @@
     </div>
 </section>
 
+<!-- --------------------------------------------------------- -->
+<!--              Challenges Section (新添加的部分)             -->
+<!-- --------------------------------------------------------- -->
+<section class="section" style="background-color: #f5f5f5;">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-2">The Challenge: Why Prior Methods Fail</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Modern robot imitation learning is dominated by two paradigms: high-fidelity <strong>Diffusion Policies</strong> and data-scalable <strong>Inverse Dynamics Models (IDM)</strong>. However, both struggle with long-horizon, real-world tasks due to fundamental flaws in their action representations. IDMs, in particular, learn a latent space that is often disconnected from physical reality, leading to three critical failure modes:
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <!-- 左侧：挑战的文字描述 -->
+            <div class="column is-6">
+                <div class="content">
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Temporal Entanglement:</strong> The model cannot distinguish between visually similar but temporally distinct states. For instance, it sees a gripper approaching an object and receding from it as nearly identical, causing hesitant or incorrect actions. Without a clear sense of time, robust planning is impossible.
+                            </p>
+                        </li>
+                        <li>
+                           <p>
+                                <strong>Discretization Artifacts:</strong> Tokenizing continuous robot movements into a discrete vocabulary (e.g., VQ-VAE) inevitably loses motion fidelity. This makes it difficult to perform precise, smooth, and dexterous manipulations.
+                           </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Sensitivity to Distractions:</strong> Without explicit guidance, models can be easily distracted by task-irrelevant background objects or movements, leading to catastrophic failures in cluttered, dynamic environments.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 右侧：总结性的图表 -->
+            <div class="column is-6 has-text-centered">
+                <figure>
+                    <!-- 请将 figure 1 的图片命名为 failure_modes.png 并放在 ./static/images/ 目录下 -->
+                    <img src="./static/images/failure_modes.png" alt="Failure modes of prior methods and LatentVLA's solutions" style="width:100%; max-width:450px;">
+                    <figcaption class="content is-size-6 mt-2">
+                        <b>LatentVLA's integrated design systematically resolves these failures.</b> Its language-guided attention filters distractions, explicit temporal encoding resolves ambiguity, and a continuous latent space preserves motion fidelity.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column">
+                <div class="content has-text-justified">
+                    <p>
+                        To overcome these deeply-rooted issues, we introduce <strong>LatentVLA</strong>, a framework engineered from the ground up to learn a continuous, spatiotemporally-aware, and task-oriented latent action space.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- Method Section -->
 <section class="section">
     <div class="container is-max-desktop">

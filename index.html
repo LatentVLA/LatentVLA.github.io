@@ -767,14 +767,6 @@
         text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    .title.is-5 {
-        background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-weight: bold;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
 
     /* 特殊样式：主标题 */
     .publication-title {
@@ -802,7 +794,7 @@
 
     /* 确保渐变在所有浏览器中正常显示 */
     @supports not (-webkit-background-clip: text) {
-        .title.is-1, .title.is-2, .title.is-3, .title.is-4, .title.is-5, .publication-title {
+        .title.is-1, .title.is-2, .title.is-3, .title.is-4, .publication-title {
             color: #3273dc;
         }
     }
@@ -817,7 +809,7 @@
     <div class="container is-max-desktop">
         <div class="columns is-centered">
         <div class="column has-text-centered">
-            <h2 class="title is-1 publication-title">🤖 LatentVLA: Taming Latent Space for Generalizable and Long-Horizon Dual-Arm Manipulation</h2>
+            <h2 class="title is-1 publication-title">LatentVLA: Taming Latent Space for Generalizable and Long-Horizon Dual-Arm Manipulation</h2>
             <div class="is-size-4 publication-authors">
             <span class="author-block">
                 <span class="author"> Anonymous Submission (#3584)</span>
@@ -1224,7 +1216,9 @@
                                     <div class="video-container">
                                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/yt8ljMnxusE?autoplay=1&mute=1&loop=1&playlist=yt8ljMnxusE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">LAPA [ICLR 2025]</p>
+                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">
+                                        <span style="color: #dc2626;">✗ Failed</span> LAPA [ICLR 2025]
+                                    </p>
                                 </div>
                                 <div class="column">
                                     <div class="video-container">
@@ -1236,7 +1230,9 @@
                                     <div class="video-container">
                                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/pWvh4g6CWqM?autoplay=1&mute=1&loop=1&playlist=pWvh4g6CWqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">LatentVLA [Ours]</p>
+                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">
+                                        <span style="color: #2563eb;">↑ +9% & +48%</span> LatentVLA [Ours]
+                                    </p>
                                 </div>
                             </div>
 
@@ -1245,7 +1241,9 @@
                                     <div class="video-container">
                                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/G0fhRZTHVUY?autoplay=1&mute=1&loop=1&playlist=G0fhRZTHVUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">LAPA [ICLR 2025]</p>
+                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">
+                                        <span style="color: #dc2626;">⚠ Error</span> LAPA [ICLR 2025]
+                                    </p>
                                 </div>
                                 <div class="column">
                                     <div class="video-container">
@@ -1257,7 +1255,9 @@
                                     <div class="video-container">
                                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/6bn4NTx9f8M?autoplay=1&mute=1&loop=1&playlist=6bn4NTx9f8M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">LatentVLA [Ours]</p>
+                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">
+                                        <span style="color: #2563eb;">↑ +9% & +6%</span> LatentVLA [Ours]
+                                    </p>
                                 </div>
                             </div>
 
@@ -1267,7 +1267,9 @@
                                     <div class="video-container">
                                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/YZz1mwtFE9E?autoplay=1&mute=1&loop=1&playlist=YZz1mwtFE9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">LAPA [ICLR 2025]</p>
+                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">
+                                        <span style="color: #dc2626;">⚠ Error</span> LAPA [ICLR 2025]
+                                    </p>
                                 </div>
                                 <div class="column">
                                     <div class="video-container">
@@ -1279,7 +1281,9 @@
                                     <div class="video-container">
                                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/mzfhoEE0vRs?autoplay=1&mute=1&loop=1&playlist=mzfhoEE0vRs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">LatentVLA [Ours]</p>
+                                    <p class="has-text-centered has-text-weight-bold mt-2 is-size-6">
+                                        <span style="color: #2563eb;">↑ +2% & +3%</span> LatentVLA [Ours]
+                                    </p>
                                 </div>
                             </div>
 

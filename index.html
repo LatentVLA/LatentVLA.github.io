@@ -730,6 +730,83 @@
 
     }
 
+    /* 标题渐变色样式 */
+    .title.is-1 {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .title.is-2 {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .title.is-3 {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .title.is-4 {
+        background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .title.is-5 {
+        background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* 特殊样式：主标题 */
+    .publication-title {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        text-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        animation: gradientShift 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes gradientShift {
+        0% {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        100% {
+            background: linear-gradient(135deg, #f093fb 0%, #667eea 50%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    }
+
+    /* 确保渐变在所有浏览器中正常显示 */
+    @supports not (-webkit-background-clip: text) {
+        .title.is-1, .title.is-2, .title.is-3, .title.is-4, .title.is-5, .publication-title {
+            color: #3273dc;
+        }
+    }
+
 
 </style>
 </head>
@@ -1111,7 +1188,7 @@
                                             <source src="./static/videos/generalization/fold_towel-3.mp4" type="video/mp4">
                                         </video>
                                     </div>
-                                    <p class="has-text-centered has-text-weight-semibold mt-2">Different Towels <span class="tag is-primary is-small">20 samples</span></p>
+                                    <p class="has-text-centered has-text-weight-semibold mt-2">Long Towels <span class="tag is-primary is-small">20 samples</span></p>
                                 </div>
                                 <div class="column is-4">
                                     <div class="video-container">
@@ -1119,7 +1196,7 @@
                                             <source src="./static/videos/generalization/wipe_table-3.mp4" type="video/mp4">
                                         </video>
                                     </div>
-                                    <p class="has-text-centered has-text-weight-semibold mt-2">Different Target Objects <span class="tag is-primary is-small">20 samples</span></p>
+                                    <p class="has-text-centered has-text-weight-semibold mt-2">Large Table <span class="tag is-primary is-small">20 samples</span></p>
                                 </div>
                                 <div class="column is-4">
                                     <div class="video-container">

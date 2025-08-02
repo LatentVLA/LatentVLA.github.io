@@ -743,7 +743,7 @@
             <h2 class="title is-1 publication-title">🤖 LatentVLA: Taming Latent Space for Generalizable and Long-Horizon Dual-Arm Manipulation</h2>
             <div class="is-size-4 publication-authors">
             <span class="author-block">
-                <span class="author"> Anonymous Submission (#731)</span>
+                <span class="author"> Anonymous Submission (#3584)</span>
             </span>
 
         <!-- <div class="linkscontainer">
@@ -778,8 +778,10 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        In this paper, we present LatentVLA, a novel unified latent-action diffusion framework for generalizable and long-horizon bimanual manipulation tasks. While diffusion-based methods excel in precise control but rely heavily on labelled data, inverse dynamics approaches offer data efficiency but suffer from representation degradation. To address these limitations, our key contributions include: (1) a Temporal-Attentive Latent Action Model (TA-LAM) that constructs a semantically rich latent space through temporal encoding and feature aggregation, jointly training an attention-driven inverse dynamics model with an action decoder to efficiently learn high-quality latent representations from both unlabeled videos and expert demonstrations; (2) a Latent Action Diffusion Transformer (LADT) that operates on continuous latent action spaces rather than discrete spaces, generating coherent latent action sequences that preserve fine-grained control capabilities while maintaining temporal consistency over extended horizons; and (3) a Flow-Matching Expert Policy Head that precisely translates these continuous latent representations into coordinated bimanual commands, bridging the gap between abstract planning and physical execution. Experiments show LatentVLA outperforms state-of-the-art approaches by 48.47% in success rate across diverse bimanual tasks, with enhanced generalization to out-of-distribution scenarios through unlabeled video data.                    </p>
-                </div>
+                        Current paradigms for robotic imitation learning face a stark trade-off between the motion fidelity of diffusion models and the data scalability of inverse dynamics models. The latter, while scalable, often learns a latent action space disconnected from physical reality. This flaw leads to critical failures: temporal entanglement, where the model cannot distinguish between visually similar states requiring distinct actions, e.g., a gripper approaching versus receding from an object. This ambiguity, compounded by discretization artifacts and sensitivity to task-irrelevant dynamics, renders robust planning infeasible. We introduce LatentVLA, a vision-language-action framework designed to overcome these limitations by learning a continuous and spatiotemporally grounded latent action representation. Its progressive three-stage architecture first employs a Temporal-Attentive Latent Action Model (TA-LAM) to resolve ambiguities using language-guided attention and explicit temporal encoding. Subsequently, a Latent Action Diffusion Transformer (LADT) performs planning via diffusion directly within this continuous latent space, preserving motion fidelity without tokenization. Finally, an expert policy head translates these latent plans into precise robot actions. Experiments show LatentVLA sets a new state-of-the-art across a suite of real-world bimanual tasks, outperforming prior methods and demonstrating superior zero-shot generalization and few-shot efficiency. See our anonymous project website for videos and more. Code will be released.
+                    </p>
+                
+                    </div>
             </div>
           </div>
     </div>
